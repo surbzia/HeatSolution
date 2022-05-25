@@ -39,6 +39,7 @@
 
                 <div class="col-md-6">
                   <div class="nav-main">
+
                     <div class="nagivation-bar">
                       <nav class="navbar navbar-expand-md navbar-light">
                         <div
@@ -46,9 +47,35 @@
                           id="navbarCollapse"
                         >
                           <div class="navbar-nav">
-                            <nuxt-link to="/about-us" class="nav-item nav-link" v-for="menu in menus" :key="menu.id"
+                               <b-button  v-for="menu in menus" :key="menu.id" v-b-toggle.my-collapse.menu.id
+                            >Shop Products</b-button
+                          >
+                               <!-- <b-button v-b-toggle.my-collapse
+                            >Shop Products</b-button
+                          > -->
+                          <b-collapse v-for="menu in menus" :key="menu.id" :id="my-collapse.menu.id" class="megamenu-view only-phone">
+                            <b-card>
+                              <b-row>
+                                <b-col md="6">
+                                  <div class="side-listing">
+                                    <h4>Shop Products</h4>
+                                    <!-- <ul>
+                                      <li v-for="menu in menus" :key="menu.id">
+                                        <nuxt-link :to="'/' + menu.slug"
+                                          ><img :src="menu.icon_url" />
+                                          {{ menu.name }}</nuxt-link
+                                        >
+                                      </li>
+                                    </ul> -->
+                                  </div>
+                                
+                                </b-col>
+                              </b-row>
+                            </b-card>
+                          </b-collapse>
+                            <!-- <nuxt-link to="/about-us" class="nav-item nav-link" v-for="menu in menus" :key="menu.id"
                               >{{menu.name}}</nuxt-link
-                            >
+                            > -->
                             <!-- <nuxt-link
                               to="/dealsandpromotions"
                               class="nav-item nav-link"
@@ -57,12 +84,83 @@
                       
                           </div>
                         </div>
+                        
                       </nav>
                     </div>
                   </div>
                 </div>
                 <div class="col-md-3"></div>
               </div>
+               <b-collapse id="my-collapse" class="megamenu-view desktop-menu">
+          <b-card>
+            <b-row>
+              <b-col md="3">
+                <div class="side-listing">
+                  <h4>Shop Products</h4>
+                  <ul>
+                    <li v-for="menu in menus" :key="menu.id">
+                      <nuxt-link :to="'/' + menu.slug"
+                        ><img :src="menu.icon_url" /> {{ menu.name }}</nuxt-link
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </b-col>
+              <b-col md="9">
+                <div class="cat-products">
+                  <b-row>
+                    <b-col md="4">
+                      <div class="img-holder">
+                        <nuxt-link to="/inquiry"
+                          ><img src="/images/aqiqa.png"
+                        /></nuxt-link>
+                      </div>
+                      <div class="short-details">
+                        <div class="p-title">
+                          <img src="/images/aqiqaicn.png" />
+                          <h5>
+                            <nuxt-link to="/inquiry">Aqiqa Service</nuxt-link>
+                          </h5>
+                        </div>
+                      </div>
+                    </b-col>
+                    <b-col md="4">
+                      <div class="img-holder">
+                        <nuxt-link to="/inquiry"
+                          ><img src="/images/sadqa.png"
+                        /></nuxt-link>
+                      </div>
+                      <div class="short-details">
+                        <div class="p-title">
+                          <img src="/images/sadqaicn.png" />
+                          <h5>
+                            <nuxt-link to="/inquiry">Sadqa Service</nuxt-link>
+                          </h5>
+                        </div>
+                      </div>
+                    </b-col>
+
+                    <b-col md="4">
+                      <div class="img-holder">
+                        <nuxt-link to="/inquiry"
+                          ><img src="/images/qurbani.png"
+                        /></nuxt-link>
+                      </div>
+                      <div class="short-details">
+                        <div class="p-title">
+                          <img src="/images/qurbaniicn.png" />
+                          <h5>
+                            <nuxt-link to="/inquiry">Qurbani Service</nuxt-link>
+                          </h5>
+                        </div>
+                      </div>
+                    </b-col>
+                  </b-row>
+                </div>
+              </b-col>
+            </b-row>
+          </b-card>
+        </b-collapse>
             </div>
           </div>
         </div>
