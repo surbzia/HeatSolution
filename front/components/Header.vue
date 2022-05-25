@@ -12,7 +12,7 @@
           <div class="row">
             <div class="col-md-2">
               <div class="logo">
-                <nuxt-link to="/"><img src="/images/logo1.png" /></nuxt-link>
+                <nuxt-link to="/"><img src="https://www.logolynx.com/images/logolynx/53/53c631e42df6702a6feac90776f1c843.png" /></nuxt-link>
               </div>
             </div>
             <div class="col-md-10">

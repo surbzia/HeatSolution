@@ -16,7 +16,7 @@ export default {
       { name: "format-detection", content: "telephone=no" },
     ],
     link: [
-      { rel: "icon", type: "image/png", href: "/favicon.png" },
+      { rel: "icon", type: "image/png", href: "https://www.logolynx.com/images/logolynx/53/53c631e42df6702a6feac90776f1c843.png" },
       { rel: "stylesheet", href: "/css/custom.css" },
       { rel: "stylesheet", href: "/css/bootstrap.min.css" },
       { rel: "stylesheet", href: "/css/fancybox.min.css" },

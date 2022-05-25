@@ -120,7 +120,7 @@ div#navbarCollapse {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid #800000;
+    border: 2px solid #0b66b5;
     background: #fff;
 }
 .shopping-main .navbar-nav .dropdown-menu {
@@ -144,17 +144,17 @@ div#navbarCollapse {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid #800000;
+    border: 2px solid #0b66b5;
     background: #fff;
 }
 
 .totall p {
-    color: #800000;
+    color: #0b66b5;
     font-size: 16px;
 }
 
 .total p {
-    color: #800000;
+    color: #0b66b5;
     font-size: 16px;
 }
 
@@ -175,8 +175,8 @@ div#navbarCollapse {
 }
 
 .logo img {
-    width: 100%;
-    max-width: 210px;
+    width: auto;
+        max-height: 58px;
 }
 
 .top-row .row {
@@ -345,8 +345,8 @@ div#navbarCollapse a:hover {
 }
 
 .carousel-captionn a {
-    border: 1px solid #800000;
-    background: #800000;
+    border: 1px solid #0b66b5;
+    background: #0b66b5;
     padding: 16px 52px 16px;
     border-radius: 49px;
     font-size: 15px;
@@ -374,8 +374,8 @@ div#navbarCollapse a:hover {
 
 .cap-1 a {
     padding: 13px 20px 13px;
-    border: 2px solid #800000;
-    background: #800000;
+    border: 2px solid #0b66b5;
+    background: #0b66b5;
     text-transform: uppercase;
     font-size: 18px;
     font-family: 'roboto-bold';
@@ -398,8 +398,8 @@ div#navbarCollapse a:hover {
 
 .cap-2 a {
     padding: 13px 20px 13px;
-    border: 2px solid #800000;
-    background: #800000;
+    border: 2px solid #0b66b5;
+    background: #0b66b5;
     text-transform: uppercase;
     font-size: 18px;
     font-family: 'roboto-bold';
@@ -596,12 +596,12 @@ section.feturd-sec .row {
 }
 
 .proj-btn a:hover {
-    background: #800000 !important;
+    background: #0b66b5 !important;
     color: #fff !important;
 }
 
 .ftr-proj:hover a {
-    background: #800000;
+    background: #0b66b5;
 }
 
 section.feturd-sec {
@@ -647,8 +647,8 @@ section.feturd-sec {
 }
 
 .fresh-list a {
-    border: 2px solid #800000;
-    background: #800000;
+    border: 2px solid #0b66b5;
+    background: #0b66b5;
     padding: 13px 45px 13px;
     font-size: 15px;
     font-family: 'roboto-bold';
@@ -726,7 +726,7 @@ footer h5 {
 }
 
 .social-icons i:hover {
-    background: #800701;
+    background: #0b66b5;
     color: #fff;
 }
 
@@ -742,7 +742,7 @@ footer h5 {
 }
 
 .our-deals form input {
-    border: 2px solid #bf8080;
+    border: 2px solid #0b66b5;
     padding: 12px 17px 12px;
     font-size: 15px;
     font-family: 'roboto-regular';
@@ -756,8 +756,8 @@ footer h5 {
 }
 
 .our-deals form button {
-    border: 1px solid #131313;
-    background: #131313;
+    border: 1px solid #0b66b5;
+        background: #0b66b5;
     font-size: 15px;
     font-family: 'roboto-bold';
     width: 51%;
@@ -770,7 +770,8 @@ footer h5 {
 }
 
 .our-deals form button:hover {
-    background: #800000;
+    background: #2e7997;
+        border: 1px solid #2e7997;
 }
 
 .ftr-copyright p {
@@ -802,8 +803,8 @@ footer {
 }
 
 .view a {
-    border: 1px solid #800000;
-    background: #800000;
+    border: 1px solid #0b66b5;
+    background: #0b66b5;
     padding: 13px 60px 13px;
     border-radius: 45px;
     font-size: 15px;
@@ -814,7 +815,7 @@ footer {
 
 .view a:hover {
     background: transparent;
-    color: #800000 !important;
+    color: #0b66b5 !important;
 }
 /*About Us Start */
 section.about-banner{
@@ -1013,7 +1014,7 @@ section.contact-banner{
     font-size: 25px;
     font-family: 'arialrounded-regular';
     text-align: center;
-    color: #800000;
+    color: #0b66b5;
     font-weight: 600;
     margin-bottom: 20px;
 }
@@ -1350,7 +1351,7 @@ width: 5%
     font-weight: 900;
 }
 .camping-content h2 span {
-    color: #800000;
+    color: #0b66b5;
     display: flex;
     margin-top: 10px;
     font-weight: 900;
@@ -1390,7 +1391,7 @@ width: 5%
     margin-top: 30px;
 }
 
-.nights select {width: 100%;float: right;background-color: #f2e5e5;color: #800000;padding: 6px;}
+.nights select {width: 100%;float: right;background-color: #f2e5e5;color: #0b66b5;padding: 6px;}
 
 .night-content p {
     font-size: 13px;
@@ -1398,7 +1399,7 @@ width: 5%
 }
 
 .night-content a {
-    background-color: #800000;
+    background-color: #0b66b5;
     padding: 10px 40px;
     border: 1px solid;
     border-radius: 50px;
@@ -1410,7 +1411,7 @@ width: 5%
     font-weight: 800 !important;
 }
 .btn-link>div i {
-    color: #800000;
+    color: #0b66b5;
     border: 2px solid;
     padding: 5px 10px;
     text-align: center;
@@ -1517,7 +1518,7 @@ section.Camping-book {
     display: flex;
 }
 
-.ad-upper i {margin-right: 10px;font-size: 25px;color: #800000;}
+.ad-upper i {margin-right: 10px;font-size: 25px;color: #0b66b5;}
 
 .ad-upper h5 {
     font-size: 14px;
@@ -1527,7 +1528,7 @@ section.Camping-book {
 
 .available-sites h4 {
     font-size: 40px;
-    color: #800000;
+    color: #0b66b5;
 }
 
 .available-sites h4 span {
@@ -1549,7 +1550,7 @@ section.Camping-book {
 .adventure-content a {
     font-size: 17px;
     display: inline-block;
-    color: #800000;
+    color: #0b66b5;
     text-decoration: underline !important;
     margin: 30px 0 0 0;
     font-family: 'roboto-regular';
@@ -1659,7 +1660,7 @@ section.upcoming-compaign .row .row > div:first-child {
     outline: none;
 }
 .reserva-book a {
-    background-color: #800000;
+    background-color: #0b66b5;
     color: #fff;
     border: 1px solid;
     padding: 10px 30px;
@@ -1671,7 +1672,7 @@ section.upcoming-compaign .row .row > div:first-child {
     position: absolute;
     top: 45px;
     left: 25px;
-    color: #800000;
+    color: #0b66b5;
 }
 .reserva-email .re-f {
     margin-left: 23px;
@@ -1698,7 +1699,7 @@ section.upcoming-compaign .row .row > div:first-child {
 }
 
 .cycling-content p.cyc {
-    color: #800000;
+    color: #0b66b5;
     font-family: 'roboto-regular';
     font-weight: 500;
     font-size: 15px;
@@ -1740,13 +1741,13 @@ section.upcoming-compaign .row .row > div:first-child {
     font-size: 20px;
     font-family: 'roboto-regular';
     font-weight: 700;
-    color: #800000;
+    color: #0b66b5;
 }
 .count {
     margin: 8px 0 0 0;
 }
 .book-now a {
-    background-color: #800000;
+    background-color: #0b66b5;
     padding: 10px 30px;
     color: #fff;
     border-radius: 50px;
@@ -1764,7 +1765,7 @@ section.upcoming-compaign .row .row > div:first-child {
 .c-t-content h6 {
     font-size: 14px;
     font-family: 'roboto-regular';
-    color: #800000;
+    color: #0b66b5;
     font-weight: 500;
     margin: 15px 0 0 0;
 }
@@ -1794,7 +1795,7 @@ h3 {}
     color: #ff7c53;
 }
 
-.c-t-content a {background-color: #800000;padding: 10px 30px;border: 1px solid;color: #fff;border-radius: 50px;display: inline-block;margin: 15px 0 0 0;}
+.c-t-content a {background-color: #0b66b5;padding: 10px 30px;border: 1px solid;color: #fff;border-radius: 50px;display: inline-block;margin: 15px 0 0 0;}
 .c-t-content {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     padding: 30px 12px;
@@ -1832,7 +1833,7 @@ h3 {}
 }
 .mid-banner-content a {
     display: inline-flex;
-    background-color: #800000;
+    background-color: #0b66b5;
     border: 1px solid #000;
     color: #fff;
     padding: 10px 30px;
@@ -1859,7 +1860,7 @@ h3 {}
 .reserva-book a:hover {
     background: transparent;
     color: #000 !important;
-    border: 1px solid #800000;
+    border: 1px solid #0b66b5;
 }
 .adventure-content a:hover {
     color: #ed7575;
@@ -1868,7 +1869,7 @@ h3 {}
 .night-content a:hover {
     background: transparent;
     color: #000 !important;
-    border: 1px solid #800000;
+    border: 1px solid #0b66b5;
 }
 .c-track img:hover {
     transform: scale(1.2);
@@ -1880,12 +1881,12 @@ h3 {}
 .c-t-content a:hover {
     background: transparent;
     color: #000 !important;
-    border: 1px solid #800000;
+    border: 1px solid #0b66b5;
 }
 .mid-banner-content a:hover {
     background: transparent;
     color: #fff !important;
-    border: 1px solid #800000;
+    border: 1px solid #0b66b5;
 }
 /*hover*/
 
@@ -1933,7 +1934,7 @@ section.featurd-sec .filter-btns a{
     width: 47px;
     height: 39px;
     border-radius: 7px;
-    color: #800000;
+    color: #0b66b5;
     font-size: 20px;
     display: inline-block;
     text-align: center;
@@ -1941,7 +1942,7 @@ section.featurd-sec .filter-btns a{
 }
 
 section.featurd-sec .filter-btns a.active{
-    border-color: #800000;
+    border-color: #0b66b5;
 }
 
 section.featurd-sec .filter-btns span{
@@ -1964,7 +1965,7 @@ section.featurd-sec .filter-btns span{
 }
 .filter-card .filter-card-heading hr{
     border: 0;
-    border-top: 5px solid #800000;
+    border-top: 5px solid #0b66b5;
     width: 25%;
     margin: unset;
     padding-bottom: 10px;
@@ -2042,7 +2043,7 @@ line-height: 25px;
 }
 
 .filter-card .panel-body li a:hover, .filter-card #accordion .panel-title a:hover{
-    color: #800000 !important;
+    color: #0b66b5 !important;
 }
 /* filter card End */
 
@@ -2053,7 +2054,7 @@ line-height: 25px;
 }
 
 .dairy-cards .proj-text span i{
-    color: #800000;
+    color: #0b66b5;
 }
 
 .dairy-cards .proj-text p{
@@ -2198,7 +2199,7 @@ section.detailed-page .detailed-page-heading h3{
 }
 
 section.detailed-page .detailed-page-heading i{
-    color: #800000;
+    color: #0b66b5;
     font-size: 16px;
     padding: 0 2px;
 }
@@ -2384,8 +2385,8 @@ section.detailed-page .btn.focus, section.detailed-page .btn:focus,section.detai
 }
 
 section.detailed-page .add-to-cart-btn button {
-    border: 2px solid #800000;
-    background: #800000;
+    border: 2px solid #0b66b5;
+    background: #0b66b5;
     padding: 8px 15px 8px;
     font-size: 15px;
     font-family: 'roboto-bold';
@@ -2478,7 +2479,7 @@ section.also-like-this .like-this-heading h3{
 }
 .slider-btn .filter-button:hover{
 color: #000;
-border-bottom: 4px solid #800000;
+border-bottom: 4px solid #0b66b5;
 }
 
 
@@ -2513,11 +2514,11 @@ border-bottom: 4px solid #800000;
     }
 
     .slider-btn .slick-next:before{
-        color: #800000;
+        color: #0b66b5;
     }
 
     .slider-btn .slick-next{
-        border:1px solid #800000;
+        border:1px solid #0b66b5;
     }
 /*slider css End*/
 
@@ -2556,7 +2557,7 @@ border-bottom: 4px solid #800000;
     width: 100%;
     object-fit: cover;
     background-position: center center;
-    background-color: #800000;
+    background-color: #0b66b5;
 }
 
 .add-to-cart .table>thead>tr>th {
@@ -2767,13 +2768,13 @@ button.remove {
 }
 
 button.remove:hover {
-    color: #800000;
+    color: #0b66b5;
 }
 
 .total-section {
     padding: 7px 20px;
     width: 100%;
-    background-color: #800000;
+    background-color: #0b66b5;
     margin: -2px 0 40px;
 }
 
@@ -2843,7 +2844,7 @@ button.remove:hover {
     border: 2px solid #fff;
     background-size: 100%;
     width: 100%;
-    background-color: #800000;
+    background-color: #0b66b5;
     object-fit: cover;
     background-position: center center;
 }
@@ -3024,12 +3025,12 @@ table.table td {
     padding-top: 30px !important;
     width: 100%;
     padding: 0px 20px 20px;
-    /* background-color: #800000; */
+    /* background-color: #0b66b5; */
     background-size: 100%;
     width: 100%;
     object-fit: cover;
     background-position: center center;
-    border: 2px solid #800000;
+    border: 2px solid #0b66b5;
 }
 
 .form-tab label {
@@ -3064,7 +3065,7 @@ table.table td {
 }
 
 .checkoutBox {
-    border: 2px solid #800000;
+    border: 2px solid #0b66b5;
     border-radius: 0;
     /* background: url(../images/arod-heading.png); */
     background-size: 100%;
@@ -3194,7 +3195,7 @@ table.table td {
     width: 100%;
     object-fit: cover;
     background-position: center center;
-    background-color: #800000;
+    background-color: #0b66b5;
 }
 
 .frm-check label {
@@ -3369,7 +3370,7 @@ div#my-collapse.only-phone {
   
   /* Handle */
   .side-listing ul::-webkit-scrollbar-thumb {
-    background: #800000;
+    background: #0b66b5;
   }
   
   /* Handle on hover */
@@ -3383,9 +3384,9 @@ div#my-collapse.only-phone {
     margin: 0;
 }
 .side-listing a:hover{
-    color:#800000;
+    color:#0b66b5;
 }
-.megamenu-view .card-body {padding-left: 30px;padding-right: 30px;border-bottom: 3px solid #800000;}
+.megamenu-view .card-body {padding-left: 30px;padding-right: 30px;border-bottom: 3px solid #0b66b5;}
 
 .megamenu-view .img-holder img {
     width: 100%;
@@ -3420,7 +3421,7 @@ ul.extra-ser li {
     height: 100px;
 }
 .inquiry-form {
-    border: 2px solid #800000;
+    border: 2px solid #0b66b5;
     padding: 30px;
     border-radius: 10px;
     margin: 40px 0;
@@ -3465,7 +3466,7 @@ ul.extra-ser li {
     color: #000;
 }
 .top-ticket {
-    background-color: #800000;
+    background-color: #0b66b5;
     color: #fff;
     display: flex;
     align-items: center;
@@ -3654,7 +3655,7 @@ img {
    
   /* Handle */
   .catg-btns::-webkit-scrollbar-thumb {
-    background: #800000; 
+    background: #0b66b5; 
   }
   
   /* Handle on hover */
@@ -3682,8 +3683,8 @@ img {
 }
 
 .all-products .row > div > a {
-    border: 1px solid #800000;
-    background: #800000;
+    border: 1px solid #0b66b5;
+    background: #0b66b5;
     padding: 13px 60px 13px;
     border-radius: 45px;
     font-size: 15px;
@@ -3695,10 +3696,10 @@ img {
 }
 .all-products .row > div > a:hover {
     background: transparent;
-    color: #800000 !important;
+    color: #0b66b5 !important;
 }
 .inq-form form {
-    border: 2px solid #800000;
+    border: 2px solid #0b66b5;
     border-radius: 5px;
     padding: 0 30px 20px;
     margin: 0 0 0;
@@ -3713,13 +3714,13 @@ img {
 }
 
 .inq-form input,.inq-form select,.inq-form textarea {
-    border: 1px solid #800000;
+    border: 1px solid #0b66b5;
     border-radius: 1px;
 }
 
 .inq-form button {
-    border: 1px solid #800000 !important;
-    background: #800000 !important;
+    border: 1px solid #0b66b5 !important;
+    background: #0b66b5 !important;
     padding: 13px 45px 13px;
     border-radius: 45px;
     font-size: 15px;
@@ -3731,7 +3732,7 @@ img {
 }
 .inq-form button:hover{
     background: transparent !important;
-    color: #800000;
+    color: #0b66b5;
 }
 .cont-info li a {
     color: #800200;
@@ -3749,14 +3750,14 @@ img {
 .inq-form li i.fa {
     font-size: 23px;
     width: 35px;
-    color: #800000;
+    color: #0b66b5;
     margin-right: 10px;
 }
 
 
 
 .inq-form form h3 {
-    background-color: #800000;
+    background-color: #0b66b5;
     color: #fff;
     margin: 0 -30px 20px;
     padding: 10px 30px 10px;
@@ -4379,7 +4380,7 @@ footer {
 
 .navbar-nav {
         padding: 10px 10px !important;
-    border: 2px solid #800701;
+    border: 2px solid #0b66b5;
     border-radius: 8px;
     margin-top: 5px;
     position: absolute;
