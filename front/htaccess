@@ -1,0 +1,8 @@
+<IfModule mod_rewrite.c>
+	RewriteCond %{HTTPS} !on 
+	RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+	
+	RewriteCond %{HTTP_HOST} ^thefreshify.com [NC]
+	RewriteRule ^(.*)$ https://thefreshify.com/$1 [L,R=301]
+</IfModule>
+# END Caching
