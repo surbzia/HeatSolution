@@ -4,9 +4,18 @@
       <div class="top-row">
         <div class="container-fluid pl-3 pr-3">
           <div class="upper-row">
-            <b-row>
-              <b-col md="3"> </b-col>
-              <b-col md="9"> </b-col>
+            <b-row style="margin-top: -8px;
+    border-bottom: 1px solid #005fa3;">
+              <b-col md="12">
+               <ul class="top_row_ul">
+  <li class="top_row_li"><nuxt-link to="/">Home</nuxt-link></li>
+  <li class="top_row_li"><nuxt-link to="/">News</nuxt-link></li>
+  <li class="top_row_li"><nuxt-link to="/">Contact</nuxt-link></li>
+  <li class="top_row_li"><nuxt-link to="/">About</nuxt-link></li>
+</ul>
+
+              </b-col>
+             
             </b-row>
           </div>
           <div class="row">

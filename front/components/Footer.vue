@@ -4,7 +4,7 @@
             <div class="row mr-5">
                <div class="col-md-2">
                   <div class="ftr-logo">
-                    <nuxt-link to="/"> <img src="/images/ftr-logo.png"></nuxt-link>
+                    <nuxt-link to="/"> <img src="https://www.logolynx.com/images/logolynx/53/53c631e42df6702a6feac90776f1c843.png"></nuxt-link>
                   </div>
                </div>
                <div class="col-md-3">
