@@ -31,12 +31,15 @@ class ProductController extends Controller
         if (isset($_GET['show_in_menu'])) {
             $categories = $categories->where('show_in_menu', 1);
         }
-      
+        $categories = $categories->where('parent_id', '==', 0);
         if (isset($_GET['perpage']) && intval($_GET['perpage']) > 0) {
             $categories = $categories->paginate(18);
         } else {
             $categories = $categories->get();
         }
+        // if (isset($_GET['is_web'])) {
+        //     $categories = $categories->groupBy('parent.name');
+        // }
         return new FrontResource(['success' => true, 'data' => $categories]);
     }
     public static function childs($category, $arr = [])

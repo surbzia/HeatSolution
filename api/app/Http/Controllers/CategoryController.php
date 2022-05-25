@@ -37,6 +37,7 @@ class CategoryController extends Controller
         }else{
             $query = $query->orderByRaw('id, parent_id, categories.level desc')->get();
         }
+  
         return CategoryResource::collection($query);
     }
 
@@ -112,6 +113,12 @@ class CategoryController extends Controller
     public function destroy(Category $category)
     {
         Gate::authorize('delete',$category);
+        // if ($category->image()->count() > 0) {
+        //     $category->image()->delete();
+        // }
+        if ($category->product()->count() > 0) {
+            $category->product()->update(['category_id' => 0]);
+        }
         $category->delete();
         return response()->json(null, 204);
     }

@@ -14,7 +14,7 @@ class AlterProductsTable extends Migration
     public function up()
     {
         Schema::table('products', function($table) {
-            $table->foreignId('category_id')->constrained();
+            $table->foreignId('category_id')->constrained()->onDelete('cascade');;
         });
     }
 
