@@ -62,8 +62,8 @@ export default {
     "sweetalert",
   ],
   axios: {
-    baseURL: "http://127.0.0.1:8000/api/front/",
-    // baseURL: "https://api.thefreshify.com/api/front/",
+    // baseURL: "http://127.0.0.1:8000/api/front/",
+    baseURL: "https://api.thefreshify.com/api/front/",
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

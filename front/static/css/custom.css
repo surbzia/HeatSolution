@@ -236,7 +236,7 @@ div#navbarCollapse {
 }
 
 .top-row {
-    background: #000;
+    background: #0b66b5;
     padding: 7px 0px 7px;
 }
 
@@ -3991,9 +3991,9 @@ footer h5 {
         margin-left: -20px;
     }
 
-    .nagivation-bar {
-        margin-left: -50px;
-    }
+        /* .nagivation-bar {
+            margin-left: -10px;
+        } */
 
 .search input {width: 90%;}
 
