@@ -189,10 +189,6 @@ div#navbarCollapse {
     align-items: center;
     justify-content: end;
 }
-.search {
-    position: relative;
-    margin-top: -5px;
-}
 
 .cat-products > div > div {
     padding: 0  10px !important;
@@ -210,19 +206,10 @@ div#navbarCollapse {
 .search input {
     width: 100%;
     padding: 7px 37px 9px;
-    border-radius: 5px;
+    /* border-radius: 5px;
     outline: none;
     font-size: 13px;
-}
-
-.search i {
-    position: absolute;
-    top: 13px;
-    left: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 12px;
+        */
 }
 
 .shopping-options {
@@ -247,7 +234,7 @@ div#navbarCollapse a {
 }
 
 div#navbarCollapse a:hover {
-    color: red !important;
+    color: rgb(26, 207, 198) !important;
 }
 
 .top-row .col-md-4 {

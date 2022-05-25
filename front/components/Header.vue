@@ -25,7 +25,6 @@
                       type="text"
                       placeholder="What are you looking for"
                     />
-                    <i class="fa fa-search" aria-hidden="true"></i>
                   </div>
                 </b-col>
 
