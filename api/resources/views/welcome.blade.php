@@ -5,8 +5,10 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.x/css/materialdesignicons.min.css" rel="stylesheet">
   <link href="/css/app.css" rel="stylesheet">
+  <link rel="icon" href="https://www.logolynx.com/images/logolynx/53/53c631e42df6702a6feac90776f1c843.png" type="image/icon type">
+
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
-  <title>The Freshify - Backend</title>
+  <title>Heat Solution | Admin</title>
 </head>
 
 <body class="">
