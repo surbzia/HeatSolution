@@ -37,29 +37,15 @@
                           id="navbarCollapse"
                         >
                           <div class="navbar-nav">
-                            <nuxt-link to="/about-us" class="nav-item nav-link"
-                              >About Us</nuxt-link
+                            <nuxt-link to="/about-us" class="nav-item nav-link" v-for="menu in menus" :key="menu.id"
+                              >{{menu.name}}</nuxt-link
                             >
-                            <nuxt-link
+                            <!-- <nuxt-link
                               to="/dealsandpromotions"
                               class="nav-item nav-link"
                               >Deals & Promotions</nuxt-link
-                            >
-                            <nuxt-link
-                              to="/dealsandpromotions"
-                              class="nav-item nav-link"
-                              >Deals & Promotions</nuxt-link
-                            >
-                            <nuxt-link
-                              to="/dealsandpromotions"
-                              class="nav-item nav-link"
-                              >Deals & Promotions</nuxt-link
-                            >
-                            <nuxt-link
-                              to="/dealsandpromotions"
-                              class="nav-item nav-link"
-                              >Deals & Promotions</nuxt-link
-                            >
+                            > -->
+                      
                           </div>
                         </div>
                       </nav>
@@ -105,7 +91,7 @@ export default {
     };
   },
   mounted() {
-    this.$axios.get("categories?show_in_menu=true").then((e) => {
+    this.$axios.get("categories?show_in_menu=true&is_web=true").then((e) => {
       this.menus = e.data.data;
     });
   },
