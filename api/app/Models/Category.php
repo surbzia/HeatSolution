@@ -9,7 +9,7 @@ class Category extends Model
 {
     use HasFactory;
     protected $appends = ['image_url','level_name','icon_url'];
-    protected $with = ['image', 'children'];
+    protected $with = ['image', 'service'];
     protected $fillable = [
         'parent_id', 'name', 'slug', 'sort_order', 'short_description', 'description', 'is_featured', 'level', 'show_in_menu',
     ];
@@ -32,7 +32,7 @@ class Category extends Model
     }
     public function service()
     {
-        return $this->hasMany(Service::class, 'service_id', 'id');
+        return $this->hasMany(Service::class, 'category_id','id');
     }
     public function children(){
         return $this->hasMany(Category::class,'parent_id');

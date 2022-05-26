@@ -9,7 +9,7 @@ class Service extends Model
 {
     use HasFactory;
     protected $appends = ['image_url','category_name'];
-    protected $with = ['image','category'];
+    protected $with = ['image','categories'];
     protected $fillable = [
         'category_id', 'name', 'slug','short_description', 'description', 'is_featured', 'level', 'show_in_menu',
     ];
@@ -21,9 +21,8 @@ class Service extends Model
         return $this->morphOne(File::class,'fileable');
     }
  
-
-    public function category(){
-        return $this->belongsTo(Category::class,'category_id');
+    public function categories(){
+        return $this->belongsTo(Category::class);
     }
 
     public function getImageUrlAttribute(){
