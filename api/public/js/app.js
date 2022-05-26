@@ -2439,6 +2439,44 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "sidebar",
   components: {},
@@ -3023,6 +3061,32 @@ __webpack_require__.r(__webpack_exports__);
       return __webpack_require__.e(/*! import() */ "resources_js_views_Category_Form_vue").then(__webpack_require__.bind(__webpack_require__, /*! @/views/Category/Form.vue */ "./resources/js/views/Category/Form.vue"));
     },
     name: 'auth.categories.edit'
+  }],
+  beforeEnter: _middleware_admin__WEBPACK_IMPORTED_MODULE_0__["default"]
+}, {
+  path: '/services/',
+  name: 'auth.services',
+  component: function component() {
+    return __webpack_require__.e(/*! import() */ "resources_js_views_Service_Main_vue").then(__webpack_require__.bind(__webpack_require__, /*! @/views/Service/Main.vue */ "./resources/js/views/Service/Main.vue"));
+  },
+  children: [{
+    path: '',
+    component: function component() {
+      return __webpack_require__.e(/*! import() */ "resources_js_views_Service_List_vue").then(__webpack_require__.bind(__webpack_require__, /*! @/views/Service/List.vue */ "./resources/js/views/Service/List.vue"));
+    },
+    name: 'auth.services.listing'
+  }, {
+    path: 'add',
+    component: function component() {
+      return __webpack_require__.e(/*! import() */ "resources_js_views_Service_Form_vue").then(__webpack_require__.bind(__webpack_require__, /*! @/views/Service/Form.vue */ "./resources/js/views/Service/Form.vue"));
+    },
+    name: 'auth.services.add'
+  }, {
+    path: 'edit/:id',
+    component: function component() {
+      return __webpack_require__.e(/*! import() */ "resources_js_views_Service_Form_vue").then(__webpack_require__.bind(__webpack_require__, /*! @/views/Service/Form.vue */ "./resources/js/views/Service/Form.vue"));
+    },
+    name: 'auth.services.edit'
   }],
   beforeEnter: _middleware_admin__WEBPACK_IMPORTED_MODULE_0__["default"]
 }, {
@@ -21349,7 +21413,7 @@ var render = function () {
                     },
                     [
                       _c("v-icon", [
-                        _vm._v("\n          mdi-bell-outline\n        "),
+                        _vm._v("\n           mdi-bell-outline\n         "),
                       ]),
                     ],
                     1
@@ -22288,6 +22352,126 @@ var render = function () {
                                         link: "",
                                         to: {
                                           name:
+                                            _vm.permissions.indexOf(133) >= 0
+                                              ? "auth.services.listing"
+                                              : "auth.dashboard",
+                                        },
+                                      },
+                                    },
+                                    [
+                                      _c(
+                                        "v-menu",
+                                        {
+                                          staticStyle: { "max-width": "600px" },
+                                          attrs: {
+                                            "open-on-hover": "",
+                                            "offset-x": "",
+                                            "close-on-content-click": false,
+                                          },
+                                          scopedSlots: _vm._u(
+                                            [
+                                              {
+                                                key: "activator",
+                                                fn: function (ref) {
+                                                  var on = ref.on
+                                                  var attrs = ref.attrs
+                                                  return [
+                                                    _c(
+                                                      "v-list-item-icon",
+                                                      _vm._g(
+                                                        _vm._b(
+                                                          {
+                                                            staticClass:
+                                                              "d-block",
+                                                            staticStyle: {
+                                                              width: "100%",
+                                                              "text-align":
+                                                                "center",
+                                                            },
+                                                            attrs: {
+                                                              color: "primary",
+                                                              dark: "",
+                                                            },
+                                                          },
+                                                          "v-list-item-icon",
+                                                          attrs,
+                                                          false
+                                                        ),
+                                                        on
+                                                      ),
+                                                      [
+                                                        _c("v-icon", {
+                                                          domProps: {
+                                                            textContent: _vm._s(
+                                                              "mdi-tag-heart-outline"
+                                                            ),
+                                                          },
+                                                        }),
+                                                      ],
+                                                      1
+                                                    ),
+                                                    _vm._v(" "),
+                                                    _c(
+                                                      "v-list-item-content",
+                                                      [
+                                                        _c(
+                                                          "v-list-item-title",
+                                                          [_vm._v("Service")]
+                                                        ),
+                                                      ],
+                                                      1
+                                                    ),
+                                                  ]
+                                                },
+                                              },
+                                            ],
+                                            null,
+                                            true
+                                          ),
+                                        },
+                                        [
+                                          _vm._v(" "),
+                                          _vm.permissions.indexOf(135) >= 0
+                                            ? _c(
+                                                "v-list",
+                                                [
+                                                  _c(
+                                                    "v-list-item",
+                                                    {
+                                                      attrs: {
+                                                        exact: "",
+                                                        link: "",
+                                                        to: {
+                                                          name: "auth.services.add",
+                                                        },
+                                                      },
+                                                    },
+                                                    [
+                                                      _c("v-list-item-title", [
+                                                        _vm._v("Add Service"),
+                                                      ]),
+                                                    ],
+                                                    1
+                                                  ),
+                                                ],
+                                                1
+                                              )
+                                            : _vm._e(),
+                                        ],
+                                        1
+                                      ),
+                                    ],
+                                    1
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "v-list-item",
+                                    {
+                                      staticClass: "pa-0",
+                                      attrs: {
+                                        link: "",
+                                        to: {
+                                          name:
                                             _vm.permissions.indexOf(138) >= 0
                                               ? "auth.product_sale_type.listing"
                                               : "auth.dashboard",
@@ -22501,7 +22685,7 @@ var render = function () {
               ],
               null,
               false,
-              3237850646
+              3622213004
             ),
           }),
         ],
@@ -85607,7 +85791,7 @@ module.exports = JSON.parse('{"_from":"axios@^0.21","_id":"axios@0.21.4","_inBun
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
-/******/ 			if ({"resources_js_views_Auth_Login_vue":1,"resources_js_views_Panel_vue":1,"resources_js_views_Notifications_vue":1,"resources_js_views_Profile_vue":1,"resources_js_views_Role_Main_vue":1,"resources_js_views_Role_List_vue":1,"resources_js_views_Role_Form_vue":1,"resources_js_views_Permission_Main_vue":1,"resources_js_views_Permission_List_vue":1,"resources_js_views_Permission_Form_vue":1,"resources_js_views_Product_Main_vue":1,"resources_js_views_Product_List_vue":1,"resources_js_views_Product_Form_vue":1,"resources_js_views_User_Main_vue":1,"resources_js_views_User_List_vue":1,"resources_js_views_User_Add_vue":1,"resources_js_views_User_Edit_vue":1,"resources_js_views_Coupon_Main_vue":1,"resources_js_views_Coupon_List_vue":1,"resources_js_views_Coupon_Form_vue":1,"resources_js_views_Category_Main_vue":1,"resources_js_views_Category_List_vue":1,"resources_js_views_Category_Form_vue":1,"resources_js_views_ProductSaleType_Main_vue":1,"resources_js_views_ProductSaleType_List_vue":1,"resources_js_views_ProductSaleType_Form_vue":1,"resources_js_views_Order_Main_vue":1,"resources_js_views_Order_List_vue":1,"resources_js_views_Order_View_vue":1,"resources_js_views_Order_Form_vue":1,"resources_js_views_Order_Edit_vue":1}[chunkId]) return "js/" + chunkId + ".js";
+/******/ 			if ({"resources_js_views_Auth_Login_vue":1,"resources_js_views_Panel_vue":1,"resources_js_views_Notifications_vue":1,"resources_js_views_Profile_vue":1,"resources_js_views_Role_Main_vue":1,"resources_js_views_Role_List_vue":1,"resources_js_views_Role_Form_vue":1,"resources_js_views_Permission_Main_vue":1,"resources_js_views_Permission_List_vue":1,"resources_js_views_Permission_Form_vue":1,"resources_js_views_Product_Main_vue":1,"resources_js_views_Product_List_vue":1,"resources_js_views_Product_Form_vue":1,"resources_js_views_User_Main_vue":1,"resources_js_views_User_List_vue":1,"resources_js_views_User_Add_vue":1,"resources_js_views_User_Edit_vue":1,"resources_js_views_Coupon_Main_vue":1,"resources_js_views_Coupon_List_vue":1,"resources_js_views_Coupon_Form_vue":1,"resources_js_views_Category_Main_vue":1,"resources_js_views_Category_List_vue":1,"resources_js_views_Category_Form_vue":1,"resources_js_views_Service_Main_vue":1,"resources_js_views_Service_List_vue":1,"resources_js_views_Service_Form_vue":1,"resources_js_views_ProductSaleType_Main_vue":1,"resources_js_views_ProductSaleType_List_vue":1,"resources_js_views_ProductSaleType_Form_vue":1,"resources_js_views_Order_Main_vue":1,"resources_js_views_Order_List_vue":1,"resources_js_views_Order_View_vue":1,"resources_js_views_Order_Form_vue":1,"resources_js_views_Order_Edit_vue":1}[chunkId]) return "js/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};

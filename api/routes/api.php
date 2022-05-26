@@ -3,7 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FileController;
-use App\Http\Controllers\{CategoryController, RoleController, PermissionController, ProductController, UserController, CouponController, FaqController, InquiryController, NewsletterController, OrderController, ProductSaleTypeController};
+use App\Http\Controllers\{ServiceController,CategoryController, RoleController, PermissionController, ProductController, UserController, CouponController, FaqController, InquiryController, NewsletterController, OrderController, ProductSaleTypeController};
 use App\Http\Controllers\Auth\ApiAuthController;
 use App\Http\Controllers\Public\ProductController as ProductFrontController;
 use App\Http\Controllers\Public\OrderController as OrderFrontController;
@@ -69,6 +69,7 @@ Route::group(['middleware' => ['cors', 'json.response', 'auth:api']], function (
     Route::apiResource('faqs', FaqController::class);
     Route::apiResource('inquiries', InquiryController::class);
     Route::apiResource('categories', CategoryController::class);
+     Route::apiResource('services', ServiceController::class);
     Route::apiResource('orders', OrderController::class);
 });
 Route::middleware('auth:api')->get('/me', function (Request $request) {

@@ -256,7 +256,7 @@
           class="pa-0"
           link
           :to="{ name: (permissions.indexOf(133)>=0?'auth.categories.listing':'auth.dashboard') }"
-        >
+          >
           <v-menu
             open-on-hover
             offset-x
@@ -286,6 +286,44 @@
             </v-list>
           </v-menu>
         </v-list-item>
+
+
+ <v-list-item
+          class="pa-0"
+          link
+          :to="{ name: (permissions.indexOf(133)>=0?'auth.services.listing':'auth.dashboard') }"
+          >
+          <v-menu
+            open-on-hover
+            offset-x
+            style="max-width: 600px"
+            :close-on-content-click="false"
+          >
+            <template v-slot:activator="{ on, attrs }">
+              <v-list-item-icon
+                color="primary"
+                dark
+                class="d-block"
+                style="width: 100%; text-align: center"
+                v-bind="attrs"
+                v-on="on"
+              >
+                <v-icon v-text="'mdi-tag-heart-outline'"></v-icon>
+              </v-list-item-icon>
+
+              <v-list-item-content>
+                <v-list-item-title>Service</v-list-item-title>
+              </v-list-item-content>
+            </template>
+            <v-list v-if="permissions.indexOf(135)>=0">
+              <v-list-item exact link :to="{ name: 'auth.services.add' }">
+                <v-list-item-title>Add Service</v-list-item-title>
+              </v-list-item>
+            </v-list>
+          </v-menu>
+        </v-list-item>
+
+
         <v-list-item
           class="pa-0"
           link

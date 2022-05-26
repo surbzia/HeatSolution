@@ -20,6 +20,7 @@ class Product extends Model
     public function category(){
         return $this->belongsTo(Category::class);
     }
+
     public function image(){
         return $this->morphOne(File::class,'fileable');
     }

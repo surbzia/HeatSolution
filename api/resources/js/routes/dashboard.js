@@ -154,6 +154,29 @@ export default [
         ],
         beforeEnter: admin,
     },
+     {
+        path: '/services/',
+        name: 'auth.services',
+        component: ()=> import('@/views/Service/Main.vue'),
+        children: [
+            {
+                path: '',
+                component: ()=> import('@/views/Service/List.vue'),
+                name: 'auth.services.listing'
+            },
+            {
+                path: 'add',
+                component: ()=> import('@/views/Service/Form.vue'),
+                name: 'auth.services.add'
+            },
+            {
+                path: 'edit/:id',
+                component: ()=> import('@/views/Service/Form.vue'),
+                name: 'auth.services.edit'
+            }
+        ],
+        beforeEnter: admin,
+    },
     {
         path: '/product-sale-type/',
         name: 'auth.product_sale_type',
