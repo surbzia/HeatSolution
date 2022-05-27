@@ -20,7 +20,7 @@
             </b-row>
           </div>
           <div class="row">
-            <div class="col-md-2">
+            <div class="col-md-3">
               <div class="logo">
                 <nuxt-link to="/"
                   ><img
@@ -28,9 +28,9 @@
                 /></nuxt-link>
               </div>
             </div>
-            <div class="col-md-10">
+            <div class="col-md-9">
               <div class="row">
-                <b-col md="3">
+                <b-col md="6">
                   <div class="search">
                     <input
                       v-model="q"
@@ -40,8 +40,13 @@
                     />
                   </div>
                 </b-col>
-
-                <div class="col-md-6">
+            </div>
+          </div>
+        </div>
+        <div class="row mt-3" style="background-color: #f9f9f9;
+    height: 35px !important;
+    margin-bottom: -8px !important;">
+          <div class="col-md-12">
                   <div class="nav-main">
                     <div class="nagivation-bar">
                       <nav class="navbar navbar-expand-md navbar-light">
@@ -57,47 +62,12 @@
                               v-b-toggle="'Nav_' + menu.id"
                               >{{ menu.name }}</b-button
                             >
-                            <!-- <b-button  
-                             v-for="(menu,index) in menus" 
-                             :key="menu.id" 
-                              v-on:mouseover="collapse(index)" 
-                              v-on:mouseleave="collapse(index)" 
-                             
-                              aria-controls="collapse1"
-                             >{{menu.name}}</b-button> -->
-
-                            <!-- <b-button v-b-toggle.my-collapse
-                            >Shop Products</b-button
-                          > -->
-
-                            <!-- <nuxt-link to="/about-us" class="nav-item nav-link" v-for="menu in menus" :key="menu.id"
-                              >{{menu.name}}</nuxt-link
-                            > -->
-                            <!-- <nuxt-link
-                              to="/dealsandpromotions"
-                              class="nav-item nav-link"
-                              >Deals & Promotions</nuxt-link
-                            > -->
                           </div>
-                          <!-- <b-collapse v-for="menu in menus" :key="menu.id" :id="menu.id" class="megamenu-view only-phone">
-                            <b-card>
-                              <b-row>
-                                <b-col md="6">
-                                  <div class="side-listing">
-                                    <h4>Shop Products</h4>
-                                   
-                                  </div>
-                                
-                                </b-col>
-                              </b-row>
-                            </b-card>
-                          </b-collapse> -->
                         </div>
                       </nav>
                     </div>
                   </div>
-                </div>
-                <div class="col-md-3"></div>
+                
               </div>
               <b-collapse
                 v-if="menu.children.length > 0"
@@ -138,7 +108,6 @@
                   </b-row>
                 </b-card>
               </b-collapse>
-            </div>
           </div>
         </div>
       </div>
