@@ -9,7 +9,7 @@ class Category extends Model
 {
     use HasFactory;
     protected $appends = ['image_url','level_name','icon_url'];
-    protected $with = ['image', 'service'];
+    protected $with = ['image','children','service'];
     protected $fillable = [
         'parent_id', 'name', 'slug', 'sort_order', 'short_description', 'description', 'is_featured', 'level', 'show_in_menu',
     ];
