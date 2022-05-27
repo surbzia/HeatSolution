@@ -46,33 +46,22 @@
                           class="collapse navbar-collapse"
                           id="navbarCollapse"
                         >
-                          <div class="navbar-nav">
-                               <b-button  v-for="menu in menus" :key="menu.id" v-b-toggle.my-collapse.menu.id
-                            >Shop Products</b-button
-                          >
+                          <div class="navbar-nav" v-if="menus.length > 0">
+                             <b-button  v-for="menu in menus" :key="menu.id" v-b-toggle="'Nav_' + menu.id" >{{menu.name}}</b-button>
+                             <!-- <b-button  
+                             v-for="(menu,index) in menus" 
+                             :key="menu.id" 
+                              v-on:mouseover="collapse(index)" 
+                              v-on:mouseleave="collapse(index)" 
+                             
+                              aria-controls="collapse1"
+                             >{{menu.name}}</b-button> -->
+                            
+
                                <!-- <b-button v-b-toggle.my-collapse
                             >Shop Products</b-button
                           > -->
-                          <b-collapse v-for="menu in menus" :key="menu.id" :id="my-collapse.menu.id" class="megamenu-view only-phone">
-                            <b-card>
-                              <b-row>
-                                <b-col md="6">
-                                  <div class="side-listing">
-                                    <h4>Shop Products</h4>
-                                    <!-- <ul>
-                                      <li v-for="menu in menus" :key="menu.id">
-                                        <nuxt-link :to="'/' + menu.slug"
-                                          ><img :src="menu.icon_url" />
-                                          {{ menu.name }}</nuxt-link
-                                        >
-                                      </li>
-                                    </ul> -->
-                                  </div>
-                                
-                                </b-col>
-                              </b-row>
-                            </b-card>
-                          </b-collapse>
+                         
                             <!-- <nuxt-link to="/about-us" class="nav-item nav-link" v-for="menu in menus" :key="menu.id"
                               >{{menu.name}}</nuxt-link
                             > -->
@@ -83,6 +72,19 @@
                             > -->
                       
                           </div>
+                           <!-- <b-collapse v-for="menu in menus" :key="menu.id" :id="menu.id" class="megamenu-view only-phone">
+                            <b-card>
+                              <b-row>
+                                <b-col md="6">
+                                  <div class="side-listing">
+                                    <h4>Shop Products</h4>
+                                   
+                                  </div>
+                                
+                                </b-col>
+                              </b-row>
+                            </b-card>
+                          </b-collapse> -->
                         </div>
                         
                       </nav>
@@ -91,71 +93,20 @@
                 </div>
                 <div class="col-md-3"></div>
               </div>
-               <b-collapse id="my-collapse" class="megamenu-view desktop-menu">
-          <b-card>
+           <b-collapse :id="`Nav_`+menu.id" v-model="menu.visible"  class="megamenu-view desktop-menu" v-for="menu in menus" :key="menu.slug">
+          <b-card class="col-md-10">
             <b-row>
-              <b-col md="3">
+              <b-col md="12">
                 <div class="side-listing">
-                  <h4>Shop Products</h4>
+                  <h4>{{menu.name}}</h4>
                   <ul>
-                    <li v-for="menu in menus" :key="menu.id">
-                      <nuxt-link :to="'/' + menu.slug"
+                    <li v-for="service in menu.service" :key="service.id">
+                     <!--  <nuxt-link :to="'/' + menu.slug"
                         ><img :src="menu.icon_url" /> {{ menu.name }}</nuxt-link
-                      >
+                      > -->
+                      <nuxt-link :to="'/' + service.slug">{{ service.name }}</nuxt-link>
                     </li>
                   </ul>
-                </div>
-              </b-col>
-              <b-col md="9">
-                <div class="cat-products">
-                  <b-row>
-                    <b-col md="4">
-                      <div class="img-holder">
-                        <nuxt-link to="/inquiry"
-                          ><img src="/images/aqiqa.png"
-                        /></nuxt-link>
-                      </div>
-                      <div class="short-details">
-                        <div class="p-title">
-                          <img src="/images/aqiqaicn.png" />
-                          <h5>
-                            <nuxt-link to="/inquiry">Aqiqa Service</nuxt-link>
-                          </h5>
-                        </div>
-                      </div>
-                    </b-col>
-                    <b-col md="4">
-                      <div class="img-holder">
-                        <nuxt-link to="/inquiry"
-                          ><img src="/images/sadqa.png"
-                        /></nuxt-link>
-                      </div>
-                      <div class="short-details">
-                        <div class="p-title">
-                          <img src="/images/sadqaicn.png" />
-                          <h5>
-                            <nuxt-link to="/inquiry">Sadqa Service</nuxt-link>
-                          </h5>
-                        </div>
-                      </div>
-                    </b-col>
-
-                    <b-col md="4">
-                      <div class="img-holder">
-                        <nuxt-link to="/inquiry"
-                          ><img src="/images/qurbani.png"
-                        /></nuxt-link>
-                      </div>
-                      <div class="short-details">
-                        <div class="p-title">
-                          <img src="/images/qurbaniicn.png" />
-                          <h5>
-                            <nuxt-link to="/inquiry">Qurbani Service</nuxt-link>
-                          </h5>
-                        </div>
-                      </div>
-                    </b-col>
-                  </b-row>
                 </div>
               </b-col>
             </b-row>
@@ -169,6 +120,7 @@
   </div>
 </template>
 <script>
+import Vue from 'vue'
 export default {
   computed: {
     // cartTotal() {
@@ -190,6 +142,20 @@ export default {
         this.$router.push("/shop?q=" + this.q);
       }
     },
+     collapse(index) {
+       
+     let val = !this.menus[index].visible;
+        // console.log(val);
+        this.$set(this.menus, index, val)
+      //  Vue.set(this.menus, index, true);
+          // for (let i = 0; i < this.menus.length; i++) {
+        //     this.menus.map((v,i) => ({
+        //     console.log('Before', v.visible)
+        //    this.menus[index].visible = !this.menus[index].visible;
+        // }));
+        // console.log('After', this.menus[index].visible);
+  
+     }
   },
   data() {
     return {
@@ -197,10 +163,12 @@ export default {
       q: "",
     };
   },
-  mounted() {
-    this.$axios.get("categories?show_in_menu=true&is_web=true").then((e) => {
-      this.menus = e.data.data;
+ async mounted() {
+    let data = await this.$axios.get("categories?show_in_menu=true&is_web=true").then((e) => {
+      return e.data.data;
     });
+   let categories =  data.map(v => ({...v, visible: false}));
+   this.menus = categories;
   },
 };
 </script>
