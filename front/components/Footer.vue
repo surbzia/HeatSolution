@@ -30,7 +30,6 @@
                <div class="col-md-4">
                   <div class="customer-service">
                      <h5>Office Address</h5>
-                     <!-- <p><span>Email:</span><a href="mailto:loremipsum@dummy.com">loremipsum@dummy.com 123-456-789 (0)</a></p> -->
                      <ul>
                         <li><a href="mailto:info@thefreshify.com">info@thefreshify.com</a></li>
                         <li><a href="https://goo.gl/maps/krEAxJZivUKVz4bRA" target="_blank">Suite No. 105 Noor Trade Center, Karachi, 75300</a></li>
@@ -49,7 +48,6 @@
                <div class="col-md-3">
                   <div class="our-deals" id="newsletter">
                      <h5>Be the first to know about our deals and offers</h5>
-                     <!-- <p>Lorem Ipsum is simply dummy text.</p> -->
                      <form @submit="onSubscribe">
                         <input type="email" style="width: 100%;" v-model="email" placeholder="Enter Email">
                         <button type="submit" style="width: 100%;" >Subscribe</button>
@@ -60,11 +58,9 @@
          </div>
          <div class="ftr-copyright">
                <p>© 2022 The Freshify. All Rights Reserved.</p>
-            </div>
-      </footer>
-      <!-- <script>
-        AOS.init();
-      </script> -->
+         </div>
+    </footer>
+      
 </template> 
 <script>
 import swal from 'sweetalert';
